@@ -1,0 +1,91 @@
+body {
+  background: url("./images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card {
+  background-color: transparent !important;
+  box-shadow: none !important; /* remove any shadow */
+  border: none !important; /* remove border */
+}
+
+.card-body {
+  background-color: transparent !important;
+}
+
+.card-wrapper {
+    margin: 5% 0;
+  }
+  
+/* You can adjust the image size by increasing/decreasing the width, height */
+.custom-circle-image {
+  width: 10vw; /* note i used vw not px for better responsive */
+  height: 10vw;
+}
+
+.custom-circle-image img {
+  object-fit: cover;
+}
+
+.card-title {
+  letter-spacing: 1.1px;
+  color: white !important; /* make text white */
+}
+
+.card-text {
+  font-family: MerriweatherRegular;
+  font-size: 22px;
+  line-height: initial;
+}
+
+.dropzone {
+  border-style: dashed;
+  background-color: rgba(255, 255, 255, 0.3) !important; /* 0.3 = 30% opacity */
+}
+
+
+.error {
+  font-family: MerriweatherRegular;
+  font-size: 30px;
+  line-height: initial;
+  color: blue;
+  text-align: center;
+}
+
+#classTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.291); /* 80% transparent black */
+  color: white;
+}
+
+#classTable td, #classTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#classTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(76, 175, 80, 0.8); /* green header, 80% opacity */
+  color: white;
+}
+
+
+
+
+/* Only Jens */
+.jens-name {
+  display: inline-flex;             
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.05;                 
+  margin: 0;                        
+}
+
+[data-player="jens_stoltenberg"] .card-body {
+  margin-top: 1.75rem !important;  
+}
